@@ -1,10 +1,10 @@
 # Mastering GIT Workshop
 
-You will learn in this workshop of
+You will learn in this workshop:
 
 - How to create and work in a separate branch in GIT.
-- How can you update your feature branch with the changes from other branch?
-- How can you resolve merge conflicts during updates?
+- How you can update your feature branch with the changes from other branch.
+- How you can resolve merge conflicts during updates.
 
 ## Prepare the repo
 
@@ -63,7 +63,7 @@ Student A:
 Student B:
 - Check the PR of Student A's work (`calling-a-cat`) and merge it if everything is fine.
 
-### 3. Update your project with main, merge conflicts.
+### 3. Update your project with main, merge conflicts
 
 - Do the same like in the previous task, but work with the `sort-by.js` both.
 - Student A implement the first task, Student B implement the second task in the same file.
