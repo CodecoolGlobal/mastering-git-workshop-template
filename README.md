@@ -1,40 +1,80 @@
 # Mastering GIT Workshop
 
-Do the following steps to prepare the working environment
-for the workshop. You will be working in pairs, so one repo/
-2 sudents are enough.
+You will learn in this workshop of
 
-## Create a new repo from the template
+- How to create and work in a separate branch in GIT.
+- How can you update your feature branch with the changes from other branch?
+- How can you resolve merge conflicts during updates?
 
-![Use this template screenshot](./docs/guide-use-template.png)
+## Prepare the repo
 
-1. Select **Use this template**.
-2. Select **Create a new repository**.
+**First, follow the instructions from here: [Prepare the repo](prepare.md)**
 
-![Create new repository screenshot](./docs/guide-create-repo.png)
+## Tasks
 
-1. Select your Github account for the Owner.
-2. You can name the repository as you want, it will be created with this name in your account.
-3. You can choose public or private repo. I would recommend private, because it is not a project just an exercise, maybe you don't want to everybody see it.
-4. You can keep include all branches unchecked.
-5. Click on the create repository
+- Form pairs. Two students will working with each other. 
+- One git repo is needed for two students.
 
-## Invite your peer to your new repo
+### 1. Creating a pull request
 
-Navigate to your newly created repo in your Github account.
+- Your task is to extend our command line application to show a list of pets.
 
-![Invite collaborators screenshot](./docs/guide-invite-collaborators.png)
+Student A:
+- You will be working in the `pets.js` file.
+- Create a new branch from the main and check it out.
+- Open the file, and implement the given task in it. Try it out.
+- Add and commit your changes and push it to GitHub.
+- Open a Pull Request (PR) in GitHub.
 
-1. Click to repo **Settings** tab.
-2. Click to **Collaborators** on the sidebar.
-3. Use the **Add people** button to add your peer as a collaborator to your repo.
+Student B:
+- Add some comments to the PR and request a change. (CR / Change Request)
 
-## Clone the repository as usual
+Student A:
+- Add an additional commit to your branch with the changes.
 
-1. Clone you and your peer the repo as usual.
+Student B:
+- Approve and merge the PR.
 
-## Install the Git Graph VS Code extension
+### 2. Update your project with main
 
-1. Click on the Extensions pane in VS Code
-2. Search for "Git Graph" [VS Code Marketplace: Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
-3. Install and Enable it.
+- Your task is to implement two features in parallel. Update your feature branch with
+the main branch after the other features is merged.
+
+Student A:
+- Your task will be to implement the feature described in the `calling-a-cat.js`.
+- Create a new branch from main. (Still do not start implementing anything.)
+
+Student B:
+- Your task will be to implement the feature described in the `search-by-name.js`.
+- Create a new branch from main. 
+- Implement your task in one or more commit, push them and open a PR. 
+
+Student A: (parallel)
+- Implement your task in one or more commit, push them and open a PR.
+
+Student B:
+- Merge your branch (`search-by-name`) on GitHub if both PR is opened.
+
+Student A:
+- Update your main branch with the current state from GitHub.
+- Update your your feature's (`calling-a-cat`) branch with the main branch by merging.
+- Push the changes to GitHub.
+
+Student B:
+- Check the PR of Student A's work (`calling-a-cat`) and merge it if everything is fine.
+
+### 3. Update your project with main, merge conflicts.
+
+- Do the same like in the previous task, but work with the `sort-by.js` both.
+- Student A implement the first task, Student B implement the second task in the same file.
+- Change the roles: right now Student A merge they changes first.
+- When student B updating their branch with main, resolve the merge conflict.
+
+## Background materials
+
+- [Atlassian's good introduction to git](https://www.atlassian.com/git/tutorials/what-is-version-control)
+- [Atlassian: Saving changes](https://www.atlassian.com/git/tutorials/saving-changes)
+- [Atlassian: Syncing](https://www.atlassian.com/git/tutorials/syncing)
+- [Atlassian: Making a pull request](https://www.atlassian.com/git/tutorials/making-a-pull-request)
+  - This material refer's to Bitbucket's (similar to GitHub) user interface, but the explanation's are correct for GitHub too.
+- [Atlassian: Using branches](https://www.atlassian.com/git/tutorials/using-branches)
