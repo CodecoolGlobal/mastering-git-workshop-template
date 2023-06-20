@@ -8,7 +8,7 @@ You will learn in this workshop of
 
 ## Prepare the repo
 
-**First, follow the instructions from here: [Prepare the repo](prepare.md)**
+**First, follow the instructions from [prepare.md](prepare.md)**
 
 ## Tasks
 
@@ -71,6 +71,8 @@ Student B:
 - When student B updating their branch with main, resolve the merge conflict.
 
 ## Background materials
+
+- Cheat Sheet for this workshop: [cheat-sheet.md](cheat-sheet.md)
 
 - [Atlassian's good introduction to git](https://www.atlassian.com/git/tutorials/what-is-version-control)
 - [Atlassian: Saving changes](https://www.atlassian.com/git/tutorials/saving-changes)
